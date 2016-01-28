@@ -16,12 +16,12 @@ public class Student
     String name;    
     String id;
     String gender;
-    String grade;
+    double grade;
     
     public Student() {
     }
 
-    public Student(String name, String id, String gender, String grade) {
+    public Student(String name, String id, String gender, double grade) {
         this.name = name;
         this.id = id;
         this.gender = gender;
@@ -52,11 +52,11 @@ public class Student
         this.gender = gender;
     }
 
-    public String getGrade() {
+    public double getGrade() {
         return grade;
     }
 
-    public void setGrade(String grade) {
+    public void setGrade(double grade) {
         this.grade = grade;
     }
     
@@ -77,7 +77,7 @@ public class Student
 
     public String toString()
     {
-        return "Student{name" + name  + "id" + id + "gender" + gender + "grade" + grade +"}";
+        return "{\"name\":\"" + getName()  + "\",\"id\":\"" + getId() + "\",\"gender\":\"" + getGender() + "\",\"grade\":\"" + getGrade() +"}";
     }
     
     

@@ -18,10 +18,15 @@ public class Course extends Student {
 
     
     
-    List<Student> student = new ArrayList<Student>();
+    List<Student> student = new ArrayList<>();
     
     public Course() {
     }   
+    
+    public Course(List<Student> students)
+    {
+        student = students;
+    }
     
     public static void add(Student student)
     {
